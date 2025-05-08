@@ -1,6 +1,6 @@
 {
   "name": "copilot-communication-service",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A communication service for handling messages between parent window and Copilot",
   "type": "module",
   "main": "dist/index.js",
