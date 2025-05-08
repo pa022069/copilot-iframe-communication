@@ -107,6 +107,35 @@ new CopilotService(targetWindow: Window, targetOrigin?: string)
 
 ---
 
+## Versioning (自動更新版號)
+
+你可以用以下指令自動 bump 版本號：
+
+```bash
+# 升級 patch 版號（1.0.0 → 1.0.1）
+yarn bump:patch
+
+# 升級 minor 版號（1.0.0 → 1.1.0）
+yarn bump:minor
+
+# 升級 major 版號（1.0.0 → 2.0.0）
+yarn bump:major
+```
+
+你也可以用以下指令自動產生 changelog、升級版本並自動發佈到 npm：
+
+```bash
+yarn release:patch   # 產生 patch 版本並自動發佈
+
+yarn release:minor   # 產生 minor 版本並自動發佈
+
+yarn release:major   # 產生 major 版本並自動發佈
+```
+
+每次發佈前請記得先升級版本號！
+
+---
+
 ## License
 
 MIT 

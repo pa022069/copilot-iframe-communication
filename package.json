@@ -15,7 +15,9 @@
     "bump:patch": "npm version patch",
     "bump:minor": "npm version minor",
     "bump:major": "npm version major",
-    "release": "standard-version"
+    "release:patch": "standard-version --release-as patch && npm publish --access public",
+    "release:minor": "standard-version --release-as minor && npm publish --access public",
+    "release:major": "standard-version --release-as major && npm publish --access public"
   },
   "keywords": [
     "copilot",
