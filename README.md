@@ -84,6 +84,17 @@ new CopilotService(targetWindow: Window, targetOrigin?: string)
 - `post<T>(action: string, payload: any): Promise<T>`  
   發送請求並等待回應（進階用法）。
 
+**Unsubscribe 標準用法（React 範例）：**
+
+```tsx
+useEffect(() => {
+  const unsubscribe = bridgeRef.current.subscribe('eventName', handler);
+  return () => {
+    unsubscribe(); // component unmount 時自動解除訂閱
+  };
+}, []);
+```
+
 ### 型別支援
 - 本套件自帶 TypeScript 型別，無需額外安裝 @types。
 
